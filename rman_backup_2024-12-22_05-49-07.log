@@ -1,0 +1,82 @@
+
+Recovery Manager: Release 19.0.0.0.0 - Production on Sun Dec 22 05:49:21 2024
+Version 19.3.0.0.0
+
+Copyright (c) 1982, 2019, Oracle and/or its affiliates.  All rights reserved.
+
+connected to target database: COMETA (DBID=1616273526)
+
+RMAN> 
+Starting backup at 22-DEC-24
+using target database control file instead of recovery catalog
+allocated channel: ORA_DISK_1
+channel ORA_DISK_1: SID=147 device type=DISK
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+input datafile file number=00001 name=/u01/app/oracle/oradata/COMETA/system01.dbf
+input datafile file number=00003 name=/u01/app/oracle/oradata/COMETA/sysaux01.dbf
+input datafile file number=00004 name=/u01/app/oracle/oradata/COMETA/undotbs01.dbf
+input datafile file number=00007 name=/u01/app/oracle/oradata/COMETA/users01.dbf
+channel ORA_DISK_1: starting piece 1 at 22-DEC-24
+channel ORA_DISK_1: finished piece 1 at 22-DEC-24
+piece handle=/backup/full_backup_20241222_3d3da28g.bkp tag=FULL_BACKUP comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:15
+Finished backup at 22-DEC-24
+
+Starting Control File and SPFILE Autobackup at 22-DEC-24
+piece handle=/u01/app/oracle/fast_recovery_area/COMETA/autobackup/2024_12_22/o1_mf_s_1188366624_mpgrlkdg_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 22-DEC-24
+
+RMAN> 
+Starting backup at 22-DEC-24
+current log archived
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting archived log backup set
+channel ORA_DISK_1: specifying archived log(s) in backup set
+input archived log thread=1 sequence=4 RECID=1 STAMP=1188351839
+input archived log thread=1 sequence=5 RECID=2 STAMP=1188366629
+channel ORA_DISK_1: starting piece 1 at 22-DEC-24
+channel ORA_DISK_1: finished piece 1 at 22-DEC-24
+piece handle=/backup/archivelog_20241222_3f3da296.bkp tag=ARCHIVELOG comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 22-DEC-24
+
+Starting Control File and SPFILE Autobackup at 22-DEC-24
+piece handle=/u01/app/oracle/fast_recovery_area/COMETA/autobackup/2024_12_22/o1_mf_s_1188366631_mpgrlr1p_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 22-DEC-24
+
+RMAN> 
+Starting backup at 22-DEC-24
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current control file in backup set
+channel ORA_DISK_1: starting piece 1 at 22-DEC-24
+channel ORA_DISK_1: finished piece 1 at 22-DEC-24
+piece handle=/backup/controlfile_20241222_3h3da29b.bkp tag=CONTROLFILE comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 22-DEC-24
+
+Starting Control File and SPFILE Autobackup at 22-DEC-24
+piece handle=/u01/app/oracle/fast_recovery_area/COMETA/autobackup/2024_12_22/o1_mf_s_1188366637_mpgrly93_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 22-DEC-24
+
+RMAN> 
+Starting backup at 22-DEC-24
+using channel ORA_DISK_1
+channel ORA_DISK_1: starting full datafile backup set
+channel ORA_DISK_1: specifying datafile(s) in backup set
+including current SPFILE in backup set
+channel ORA_DISK_1: starting piece 1 at 22-DEC-24
+channel ORA_DISK_1: finished piece 1 at 22-DEC-24
+piece handle=/backup/spfile_20241222_3j3da29h.bkp tag=PARAM comment=NONE
+channel ORA_DISK_1: backup set complete, elapsed time: 00:00:01
+Finished backup at 22-DEC-24
+
+Starting Control File and SPFILE Autobackup at 22-DEC-24
+piece handle=/u01/app/oracle/fast_recovery_area/COMETA/autobackup/2024_12_22/o1_mf_s_1188366642_mpgrm2pw_.bkp comment=NONE
+Finished Control File and SPFILE Autobackup at 22-DEC-24
+
+RMAN> 
+
+Recovery Manager complete.
